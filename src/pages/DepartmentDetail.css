@@ -1,0 +1,158 @@
+/* frontend/src/pages/DepartmentDetail.css */
+
+.department-detail {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.back-btn {
+  background: #eee;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.dept-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dept-icon-large {
+  font-size: 4rem;
+}
+
+.dept-header-info h1 {
+  margin: 0;
+}
+
+.dept-description-full {
+  color: #555;
+}
+
+.emergency-badge-large {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: #ff4d4f;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.dept-content .dept-section {
+  margin-bottom: 2rem;
+}
+
+.services-list li {
+  margin-bottom: 0.3rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.contact-info a {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  margin-top: 0.2rem;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-info a:hover {
+  background-color: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.doctors-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.doctor-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.doctor-icon {
+  font-size: 1.5rem;
+}
+
+.dept-action {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn-large {
+  padding: 0.7rem 1.5rem;
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.loading-container, .error-container {
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+}
+
+/* Emergency & Checkup Images */
+.emergency-gallery, .general-checkup-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emergency-card img,
+.checkup-image-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.emergency-card img:hover,
+.checkup-image-card img:hover {
+  transform: scale(1.02);
+}
+/* Referral & Service Assurance Section */
+.referral-services {
+  background-color: #f0f4f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  line-height: 1.6;
+}
+
+.referral-services h2 {
+  color: #1890ff;
+  margin-bottom: 1rem;
+}
+
+.referral-services ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.referral-services ul li {
+  margin-bottom: 0.3rem;
+}

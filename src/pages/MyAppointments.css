@@ -1,0 +1,136 @@
+/* frontend/src/pages/MyAppointments.css */
+
+.my-appointments {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-tabs button {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filter-tabs button.active {
+  background-color: #1890ff;
+  color: white;
+  border-color: #1890ff;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+}
+
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.appointment-card-full {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.appointment-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.appointment-badges .badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  margin-left: 0.3rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Status badges */
+.status-pending { background-color: #ffecb3; color: #856404; }
+.status-confirmed { background-color: #d4edda; color: #155724; }
+.status-completed { background-color: #cce5ff; color: #004085; }
+.status-cancelled { background-color: #f8d7da; color: #721c24; }
+
+/* Urgency badges */
+.urgency-low { background-color: #e2e3e5; color: #383d41; }
+.urgency-medium { background-color: #ffeeba; color: #856404; }
+.urgency-high { background-color: #f5c6cb; color: #721c24; }
+.urgency-emergency { background-color: #f8d7da; color: #721c24; font-weight: bold; }
+
+.appointment-card-body {
+  margin-top: 0.5rem;
+}
+
+.appointment-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-label {
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.info-value {
+  font-size: 0.9rem;
+}
+
+.symptoms-section, .notes-section {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.appointment-card-footer {
+  margin-top: 0.5rem;
+  text-align: right;
+}
+
+.btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary { background-color: #1890ff; color: white; }
+.btn-danger { background-color: #ff4d4f; color: white; }
+
+.loading-container {
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+}
